@@ -1,16 +1,15 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!DOCTYPE eagle SYSTEM "eagle.dtd">
-<eagle version="9.6.2">
+<eagle version="6.6.0">
 <drawing>
 <settings>
 <setting alwaysvectorfont="no"/>
-<setting keepoldvectorfont="yes"/>
 <setting verticaltext="up"/>
 </settings>
 <grid distance="0.05" unitdist="mm" unit="mm" style="dots" multiple="1" display="no" altdistance="0.5" altunitdist="mm" altunit="mm"/>
 <layers>
 <layer number="1" name="Top" color="4" fill="1" visible="yes" active="yes"/>
-<layer number="2" name="gnd" color="10" fill="1" visible="no" active="yes"/>
+<layer number="2" name="gnd" color="10" fill="1" visible="yes" active="yes"/>
 <layer number="3" name="Route3" color="4" fill="3" visible="no" active="no"/>
 <layer number="4" name="Route4" color="1" fill="4" visible="no" active="no"/>
 <layer number="5" name="Route5" color="4" fill="4" visible="no" active="no"/>
@@ -23,17 +22,17 @@
 <layer number="12" name="Route12" color="1" fill="5" visible="no" active="no"/>
 <layer number="13" name="Route13" color="4" fill="5" visible="no" active="no"/>
 <layer number="14" name="Route14" color="1" fill="6" visible="no" active="no"/>
-<layer number="15" name="vcc" color="14" fill="1" visible="no" active="yes"/>
-<layer number="16" name="Bottom" color="1" fill="1" visible="no" active="yes"/>
+<layer number="15" name="vcc" color="14" fill="1" visible="yes" active="yes"/>
+<layer number="16" name="Bottom" color="1" fill="1" visible="yes" active="yes"/>
 <layer number="17" name="Pads" color="2" fill="1" visible="yes" active="yes"/>
 <layer number="18" name="Vias" color="2" fill="1" visible="yes" active="yes"/>
 <layer number="19" name="Unrouted" color="6" fill="1" visible="yes" active="yes"/>
 <layer number="20" name="Dimension" color="15" fill="1" visible="yes" active="yes"/>
 <layer number="21" name="tPlace" color="7" fill="1" visible="yes" active="yes"/>
-<layer number="22" name="bPlace" color="7" fill="1" visible="no" active="yes"/>
-<layer number="23" name="tOrigins" color="15" fill="1" visible="yes" active="yes"/>
+<layer number="22" name="bPlace" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="23" name="tOrigins" color="15" fill="1" visible="no" active="yes"/>
 <layer number="24" name="bOrigins" color="15" fill="1" visible="no" active="yes"/>
-<layer number="25" name="tNames" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="25" name="tNames" color="7" fill="1" visible="no" active="yes"/>
 <layer number="26" name="bNames" color="7" fill="1" visible="no" active="yes"/>
 <layer number="27" name="tValues" color="7" fill="1" visible="no" active="yes"/>
 <layer number="28" name="bValues" color="7" fill="1" visible="no" active="yes"/>
@@ -48,18 +47,18 @@
 <layer number="37" name="tTest" color="7" fill="1" visible="no" active="yes"/>
 <layer number="38" name="bTest" color="7" fill="1" visible="no" active="yes"/>
 <layer number="39" name="tKeepout" color="4" fill="11" visible="yes" active="yes"/>
-<layer number="40" name="bKeepout" color="1" fill="11" visible="no" active="yes"/>
+<layer number="40" name="bKeepout" color="1" fill="11" visible="yes" active="yes"/>
 <layer number="41" name="tRestrict" color="4" fill="10" visible="yes" active="yes"/>
-<layer number="42" name="bRestrict" color="1" fill="10" visible="no" active="yes"/>
-<layer number="43" name="vRestrict" color="2" fill="10" visible="no" active="yes"/>
-<layer number="44" name="Drills" color="7" fill="1" visible="no" active="yes"/>
-<layer number="45" name="Holes" color="7" fill="1" visible="no" active="yes"/>
-<layer number="46" name="Milling" color="3" fill="1" visible="no" active="yes"/>
+<layer number="42" name="bRestrict" color="1" fill="10" visible="yes" active="yes"/>
+<layer number="43" name="vRestrict" color="2" fill="10" visible="yes" active="yes"/>
+<layer number="44" name="Drills" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="45" name="Holes" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="46" name="Milling" color="3" fill="1" visible="yes" active="yes"/>
 <layer number="47" name="Measures" color="7" fill="1" visible="no" active="yes"/>
 <layer number="48" name="Document" color="7" fill="1" visible="no" active="yes"/>
 <layer number="49" name="Reference" color="7" fill="1" visible="no" active="yes"/>
 <layer number="50" name="dxf" color="7" fill="1" visible="no" active="yes"/>
-<layer number="51" name="tDocu" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="51" name="tDocu" color="7" fill="1" visible="no" active="yes"/>
 <layer number="52" name="bDocu" color="7" fill="1" visible="no" active="yes"/>
 <layer number="91" name="Nets" color="2" fill="1" visible="no" active="no"/>
 <layer number="92" name="Busses" color="1" fill="1" visible="no" active="no"/>
@@ -1793,23 +1792,16 @@ einem neuen Namen ab.</description>
 <param name="slThermalsForVias" value="0"/>
 <param name="dpMaxLengthDifference" value="10mm"/>
 <param name="dpGapFactor" value="2.5"/>
+<param name="checkGrid" value="0"/>
 <param name="checkAngle" value="0"/>
 <param name="checkFont" value="1"/>
 <param name="checkRestrict" value="1"/>
-<param name="checkStop" value="0"/>
-<param name="checkValues" value="0"/>
-<param name="checkNames" value="1"/>
-<param name="checkWireStubs" value="1"/>
-<param name="checkPolygonWidth" value="0"/>
 <param name="useDiameter" value="13"/>
 <param name="maxErrors" value="50"/>
 </designrules>
 <autorouter>
 <pass name="Default">
 <param name="RoutingGrid" value="50mil"/>
-<param name="AutoGrid" value="1"/>
-<param name="Efforts" value="0"/>
-<param name="TopRouterVariant" value="1"/>
 <param name="tpViaShape" value="round"/>
 <param name="PrefDir.1" value="|"/>
 <param name="PrefDir.2" value="0"/>
@@ -4295,14 +4287,8 @@ einem neuen Namen ab.</description>
 <via x="22.625" y="3.375" extent="1-16" drill="0.3038" diameter="0.4"/>
 </signal>
 </signals>
-<mfgpreviewcolors>
-<mfgpreviewcolor name="soldermaskcolor" color="0xC8008000"/>
-<mfgpreviewcolor name="silkscreencolor" color="0xFFFEFEFE"/>
-<mfgpreviewcolor name="backgroundcolor" color="0xFF282828"/>
-<mfgpreviewcolor name="coppercolor" color="0xFFFFBF00"/>
-<mfgpreviewcolor name="substratecolor" color="0xFF786E46"/>
-</mfgpreviewcolors>
 <errors>
+<approved hash="11,1,a22840deaf344dc2"/>
 <approved hash="3,1,7a3bfa0695cf15f2"/>
 <approved hash="3,1,78aaf89790581065"/>
 <approved hash="3,1,7f1dff2092e912d4"/>
@@ -4313,39 +4299,35 @@ einem neuen Namen ab.</description>
 <approved hash="3,1,7032f039d1f051fb"/>
 <approved hash="3,1,7283f288d647564c"/>
 <approved hash="3,1,7714f71fd4d654dd"/>
-<approved hash="5,1,2e880538ac1372f9"/>
-<approved hash="5,1,e6bc65c5294ef92d"/>
-<approved hash="5,1,e151474910bb6240"/>
-<approved hash="5,1,962b0b6418d22b87"/>
-<approved hash="5,1,ca1ffba7c68bc7bf"/>
-<approved hash="5,1,05f0e2e1ad163c42"/>
-<approved hash="11,1,482940d88d628593"/>
-<approved hash="19,1,1d4afb2216085626"/>
-<approved hash="19,1,091d0e7b9a4ffbd8"/>
-<approved hash="19,1,a7ce0757729774ac"/>
-<approved hash="19,1,1252bda4de0c12f2"/>
-<approved hash="19,1,122915a980b1fc78"/>
-<approved hash="19,1,01c25cf1ca2a0105"/>
-<approved hash="19,1,ab276d01331aaf9e"/>
-<approved hash="19,1,e9cbd226457005d4"/>
-<approved hash="19,1,cdd9caab20d927ab"/>
-<approved hash="19,1,3650b16a8c76510a"/>
-<approved hash="19,1,ef07d40c5fce0234"/>
-<approved hash="19,2,1d4afb2216085626"/>
-<approved hash="19,2,a7ce0757729774ac"/>
-<approved hash="19,2,ab276d01331aaf9e"/>
-<approved hash="19,2,3650b16a8c76510a"/>
-<approved hash="19,15,1d4afb2216085626"/>
-<approved hash="19,15,a7ce0757729774ac"/>
-<approved hash="19,15,ab276d01331aaf9e"/>
-<approved hash="19,15,3650b16a8c76510a"/>
-<approved hash="19,16,1d4afb2216085626"/>
-<approved hash="19,16,a7ce0757729774ac"/>
-<approved hash="19,16,ab276d01331aaf9e"/>
-<approved hash="19,16,3650b16a8c76510a"/>
-<approved hash="19,1,31cb3e186c4abbc7"/>
-<approved hash="19,1,210ff6e5f06d79de"/>
-<approved hash="19,1,c4f46b0086b06b14"/>
+<approved hash="19,1,f6ebdb310cfa4fd1"/>
+<approved hash="19,1,7638634cc8029f28"/>
+<approved hash="5,1,f54a5e6239fde296"/>
+<approved hash="19,1,e997de13124c5681"/>
+<approved hash="19,1,16ba01fc8a83df7f"/>
+<approved hash="5,1,53a8aa3cb153823b"/>
+<approved hash="5,1,853a05641adf3594"/>
+<approved hash="19,1,27abcdd9caab20d9"/>
+<approved hash="19,1,d10cc06b6e2111b7"/>
+<approved hash="19,1,cdbcdd29735b1087"/>
+<approved hash="19,1,a3d67627ac90c73f"/>
+<approved hash="19,1,04a6d473d5e3bb8c"/>
+<approved hash="19,1,513acbfe8f8b0147"/>
+<approved hash="5,1,13ab3ad5767aac58"/>
+<approved hash="5,1,e7c4e4476bc93a49"/>
+<approved hash="19,1,00db50f8b617042a"/>
+<approved hash="19,1,03265c5140544f2f"/>
+<approved hash="19,2,16ba01fc8a83df7f"/>
+<approved hash="19,2,7638634cc8029f28"/>
+<approved hash="19,2,a3d67627ac90c73f"/>
+<approved hash="19,2,04a6d473d5e3bb8c"/>
+<approved hash="19,15,16ba01fc8a83df7f"/>
+<approved hash="19,15,7638634cc8029f28"/>
+<approved hash="19,15,04a6d473d5e3bb8c"/>
+<approved hash="19,15,a3d67627ac90c73f"/>
+<approved hash="19,16,16ba01fc8a83df7f"/>
+<approved hash="19,16,7638634cc8029f28"/>
+<approved hash="19,16,a3d67627ac90c73f"/>
+<approved hash="19,16,04a6d473d5e3bb8c"/>
 </errors>
 </board>
 </drawing>
